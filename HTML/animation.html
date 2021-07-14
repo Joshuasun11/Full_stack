@@ -1,0 +1,112 @@
+<style>
+  .center{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+
+  div {
+    height: 40px;
+    width: 450px;
+    background: black;
+    margin: 80px auto;
+    border-radius: 5px;
+    position: relative;
+  }
+
+  p{
+    display:flex;
+    font-size:50px;
+    font-family:fantasy;
+    justify-content:center;
+    align-items: center;
+  }
+
+  button {
+    display: flex;
+    border-radius: 5px;
+    color: white;
+    background-color: #0F5897;
+    padding: 5px 10px 8px 10px;
+    position: relative;
+    justify-content:center;
+    align-items: center;
+  }
+  
+  button:hover {
+    animation-name: background-color;
+    animation-duration: 700ms;
+    /*animation-fill-mode: forwards; 此功能为使动画停留在最后一帧（需舍去iteration一行代码）*/
+    animation-iteration-count:infinite;
+  }
+@keyframes background-color{
+  0%{
+    background-color: #0F5897;
+    right: 0px;
+    width:74px;
+  }
+  50%{
+    background-color:#4791d0;
+    right: 10px;
+    width: 60px;
+  }
+  100%{
+    background-color: #0F5897;
+    right: 0px;
+    width:74px;
+  }
+}   
+ 
+#rect {
+      animation-name:rainbow;
+      animation-duration:4s;
+      animation-iteration-count: infinite;
+    }
+#change{
+      animation-name:world;
+      animation-duration:4s;
+      animation-iteration-count:infinite;
+    }
+@keyframes rainbow{
+      0%{
+        background-color:blue;
+        top:0px;
+        left:0px;
+      }
+      50%{
+        background-color:green;
+        top:10px;
+        left:40px;
+      }
+      100%{
+        background-color:yellow;
+        top:0px;
+        left:0px;
+      }
+    }
+@keyframes world{
+      0%{
+        color:red;
+      }
+      25%{
+        color:green;
+      }
+      50%
+      {
+        color:purple;
+      }
+      75%{
+        /*color:white;*/
+        opacity:0;
+      }
+      100%{
+        color:red;
+      }
+    }
+    
+  </style>
+  <div id="rect"></div>
+  <p id="change">Hello World</p>
+  <p2 class="center"><button>Register</button>
+  hover on the button</p2>
+  <p3 class="center">now it works</p3>

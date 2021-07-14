@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>anyway</title>
+        <style>
+            /* 根字体大小*/
+            html {
+                font-size: 5px;
+            }
+            body{
+                background-color: tomato;
+            }
+            p{
+                font-size: 5rem;
+            }
+            /* any background smaller than 300px will display blue
+            greater display color tomato*/
+            @media screen and (max-width: 500px){ 
+                body{
+                    background-color: #85C1E9;
+                }
+                p{
+                    font-size: 9rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+        <p>
+            Hello world!
+        </p>
+    </body>
+
+</html>
