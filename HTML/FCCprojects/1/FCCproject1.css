@@ -1,0 +1,112 @@
+html{
+    height: 100%;
+}
+
+#main{
+    background-color: rgba(0, 0, 0, 0.514);
+    background-blend-mode: multiply;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Wright1901GliderBottom.jpg/1920px-Wright1901GliderBottom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    background-attachment:fixed;
+    text-align: center;
+    justify-content: center;
+}
+
+#title{
+  font-size:60px;
+  font-family:fantasy;
+  margin-bottom:0px;
+}
+
+#img-div{
+    text-align:center;
+}
+
+#image{
+    display: flex;
+    height: 450px;
+    justify-content: center;
+}
+
+#img-caption{
+    font-size: 1rem;
+    margin-top: 80px;
+}
+
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+
+header p{
+
+    color: rgb(221, 219, 219);
+    font-size:20px;
+    text-align:center;
+    margin-top:10px;
+    font-family:'Courier New', Courier, monospace
+}
+
+.timeline{
+    margin-top: 60px;
+    margin-bottom:60px;
+    text-align:center;
+    
+}
+
+section{
+    margin-top:30px;
+    max-width: 700;
+    text-align:center;
+    
+}
+ul{
+    line-height:1.5;
+    text-align:left;
+    max-width:600px;
+    margin: 0px auto;
+}
+li{
+    color: rgb(221, 219, 219);
+    margin:20px;
+}
+
+.box1{
+    height:580px;
+    width:100%;
+    background-color:rgb(150, 150, 150);
+    padding-top: 50px;
+}
+
+h3{
+    color:rgb(221, 219, 219);
+}
+
+blockquote{
+    color:rgb(221, 219, 219);
+    text-align:center;
+    width:700px;
+    margin:50px auto
+}
+blockquote p{
+    font-size:20px;
+    text-align:end;
+    width:680px;
+}
+.end{
+    color:rgb(221, 219, 219);
+    text-align:center;
+    font-size:15px;
+    margin-bottom: 50px;
+}
+footer{
+    color: rgba(0, 0, 31, 0.247);
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 12px;
+} 

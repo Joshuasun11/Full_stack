@@ -1,0 +1,37 @@
+<style>
+    #box-container {
+      display: flex;
+      height: 500px;
+    }
+    #box-1 {
+      background-color: dodgerblue;
+      border-radius: 50px;
+      height: 200px;
+      width: 200px;
+      animation-name:cop-blue;
+      animation-duration: 200ms;
+      animation-iteration-count: infinite;
+    }
+  
+    #box-2 {
+      background-color: orangered;
+      border-radius: 50px;
+      height: 200px;
+      width: 200px;
+      animation-name:cop-blue;
+      
+    }
+    @keyframes cop-blue {
+      0%{
+        order:2;
+      }
+      50%{
+        order:1;
+      }
+    }
+  </style>
+  
+  <div id="box-container">
+    <div id="box-1"></div>
+    <div id="box-2"></div>
+  </div>

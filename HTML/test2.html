@@ -1,0 +1,285 @@
+<!DOCTYPE html><!--tells the browser the version of html(html means html5)-->
+<html>
+    <header>
+  <h1 id="title">Video-gaming survey form</h1>
+  <p id="description">What kind of games do you like?<br>
+    Fill this survey and let me know!</p>
+</header>
+<div id="survey-elements">
+<form id="survey-form">
+  <div id="Personal-info" class="section">
+    <h2>This part is about your personal info</h2>
+    <hr class="blackline">
+    <div id="full-name" class="questionbox">
+    <label id="name-label" for="name" class="question">What's your name?</label>
+    <input
+      type="text"
+      id="name"
+      placeholder="Full Name"
+      class="textbox" 
+      required>
+  </div>
+    <div id="e-mail" class="questionbox">
+    <label id="email-label" for="email" class="question">What's your e-mail?</label>
+    <input
+      type="email"
+      id="email"
+      placeholder="Email address"
+      class="textbox" 
+      required>
+  </div>
+    <div id="hours-played" class="questionbox">
+    <label id="number-label" for="number">How many hours do you spend playing videogames on a weekly basis?</label>
+      <input
+        type="number";
+        id="number";
+        name="hours-played";
+        class="textbox";
+        min="0";
+        max="126";
+        placeholder="Hours played"
+       >
+  </div>
+    <div id="birth" class="questionbox">
+      <label id="date-label" for="date" class="question">When where you born?</label>
+      <input
+         type="date";
+         id="birthday";
+         name="date";
+         class="textbox"
+         value="2000-01-01";
+         required>
+    </div>
+    <div id="country" class="questionbox">
+      <label for="country" class="question">Where do you live?
+      <select id="dropdown" name="country" class="textbox">
+        <option disabled selected value>Choose your place of residence</option>
+        <option value="latinoamerica">Latin America</option>
+        <option value="north-america">North America</option>
+        <option value="western-europe">Western Europe</option>
+        <option value="eastern-europe">Eastern Europe</option>
+        <option value="middle-east">Middle East</option>
+        <option value="russia">Russia</option>
+        <option value="china">China</option>
+        <option value="india">India</option>
+        <option value="japan">Japan</option>
+        <option value="korea">Korea</option>
+        <option value="australia">Australia</option>
+        <option value="north-africa">North Africa</option>
+        <option value="south-africa">South Africa</option>
+        <option value="other">Other</option>
+      </select>
+      </label>
+    </div>
+  </div>
+  <hr>
+  <div id="Preferences-info" class="section">
+    <h2>This part is about your likes and dislikes in videogames</h2>
+    <hr class="blackline">
+    <div id="genres" class="questionbox">
+      <p>What genres of videogames do you usually play?</p>
+      <div id="genreCol">
+      <div id="genres1">
+      <label for="action">
+        <input
+               type="checkbox";
+               name="genre";
+               id="action";
+               value="action";
+               class="clickers";
+               >Action
+      </label>
+      <label for="adventure">
+        <input
+               type="checkbox";
+               name="genre";
+               id="adventure";
+               value="adventure";
+               class="clickers";
+               >Adventure
+      </label>
+      <label for="action-adventure">
+        <input
+               type="checkbox";
+               name="genre";
+               id="action-adventure";
+               value="action-adventure";
+               class="clickers";
+               >Action - Adventure
+      </label>
+      <label for="role-play">
+        <input
+               type="checkbox";
+               name="genre";
+               id="role-play";
+               value="role-play";
+               class="clickers";
+               >Role-playing videogames
+      </label>
+      </div>
+      <div id="genres2">
+      <label for="simulation">
+        <input
+               type="checkbox";
+               name="genre";
+               id="simulation";
+               value="simulation";
+               class="clickers";
+               >Simulation
+      </label>
+      <label for="strategy">
+        <input
+               type="checkbox";
+               name="genre";
+               id="strategy";
+               value="strategy";
+               class="clickers";
+               >Strategy
+      </label>
+      <label for="sports">
+        <input
+               type="checkbox";
+               name="genre";
+               id="sports";
+               value="sports";
+               class="clickers";
+               >Sports
+      </label>
+      <label for="MMO">
+        <input
+               type="checkbox";
+               name="genre";
+               id="MMO";
+               value="MMO";
+               class="clickers";
+               >MMO
+      </label>
+      </div>
+      </div>
+    </div>
+    <div id="important-aspect" class="questionbox">
+    <p>What would you say is the most important aspect in a videogame?</p>
+      <label for="story">
+      <input
+             type="radio";
+             name="aspect";
+             id="story";
+             value="story";
+             class="clickers";
+             >Story & Character Development
+    </label>
+      <label for="gameplay">
+        <input
+             type="radio";
+             name="aspect";
+             id="gameplay";
+             value="gameplay";
+             class="clickers";
+             >Gameplay & Controls
+    </label>
+      <label for="replay">
+        <input
+               type="radio";
+               name="aspect";
+               id="replay";
+               value="replay";
+               class="clickers";
+               >Replay Value
+    </label>
+      <label for="graphics">
+        <input
+               type="radio";
+               name="aspect";
+               id="graphics";
+               value="graphics";
+               class="clickers";
+               >Graphics
+      </label>
+      <label for="accessibility">
+        <input
+               type="radio";
+               name="aspect";
+               id="accesibility";
+               value="accesibility";
+               class="clickers";
+               >Accesibility
+      </label>
+      <label for="co-op">
+        <input
+               type="radio";
+               name="aspect";
+               id="co-op";
+               value="co-op"
+               class="clickers";
+               >Co-op & Multiplayer modes.
+      </label>
+    </div>
+    <div id="devices" class="questionbox">
+      <p> How much do you enjoy playing videogames in these devices?</p>
+      <label for="mobile" class="sliderQ">Mobile (Android / iOS)</label>
+        <input
+               type="range";
+               name="devices";
+               id="mobile";
+               min="0";
+               max="100";
+               value="0";
+               class="slider";>
+      
+      <label for="PSX" class="sliderQ">Play Station</label>
+        <input
+               type="range";
+               name="devices";
+               id="PSX";
+               min="0";
+               max="100";
+               value="0";
+               class="slider";>
+      
+      <label for="xbox" class="sliderQ">Xbox</label>
+        <input
+               type="range";
+               name="devices";
+               id="xbox";
+               min="0";
+               max="100";
+               value="0";
+               class="slider";>
+      
+      <label for="nintendo" class="sliderQ">Nintendo</label>
+        <input
+               type="range";
+               name="devices";
+               id="nintendo";
+               min="0";
+               max="100";
+               value="0";
+               class="slider";>
+      
+      <label for="pc" class="sliderQ">PC</label>
+        <input
+               type="range";
+               name="devices";
+               id="pc";
+               min="0";
+               max="100";
+               value="0";
+               class="slider";>
+    </div>
+  </div>
+  <hr>
+  <div id="Comments" class="section">
+    <h2 id="commentTitle";>Anything else you would like me to know?</h2>
+      <label for="comment">
+        <textarea id="comment" name="comments" placeholder="Please, leave your comments here..."></textarea>
+      </label>
+    </div>
+  <div id="buttons" class="section">
+    <button type="submit" id="submit">I'm done!</button>
+    <button type="reset" id="reset">I made a lot of mistakes!</button>
+  </div>
+</form>
+</div>
+<footer id="footer">This website was designed by Juan David Caballero Campo. To see other works, please check out my profile</footer>
+
+</html>
