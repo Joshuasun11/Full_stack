@@ -1,0 +1,33 @@
+Title(h1):Wright Brothers
+       (p):American aviation pioneers
+
+       (h2):Wright Brothers timeline 
+
+April 16, 1867: Wilbur Wright is born on a farm not far from New Castle, Indiana.
+
+August 19, 1871: Orville Wright is born in Dayton, Ohio.
+
+1892: The Wright brothers open a bicycle business in Dayton, Ohio. The business was originally called the Wright Cycle Exchange, but the brothers eventually changed its name to the Wright Cycle Company.
+
+Oct 5 1900: Flight of 1900 Wright Glider
+The 1900 glider was the Wrights’ first piloted aircraft. First flight-tested at Kitty Hawk in the fall of that year, it incorporated the wire-braced biplane structure and wing-warping control system they developed with their 1899 kite.
+
+Jul 27 1901: Flight of 1901 Wright Glider. The 1901 Wright Glider was the second of the brothers' experimental gliders. They tested it over the Kill Devil Hills, four miles south of Kitty Hawk. The glider was similar to the 1900 version, but had larger wings. It first flew on July 27, 1901, and was retired on August 17. During this time it made between 50 and 100 free flights, in addition to tethered flights as a kite.
+
+Sep 23 1902: Flight of 1902 Wright Glider. The 1902 Wright Glider was the third free-flight glider built by the brothers. This was their first glider to incorporate yaw control by use of a rear rudder, and its design led directly to the powered 1903 Wright Flyer.
+
+Dec 17 1903: Wright Brothers First Flight. On December 17, 1903, two brothers from Dayton, Ohio, named Wilbur and Orville Wright, were successful in flying an airplane they built. Their powered aircraft flew for 12 seconds above the sand dunes of Kitty Hawk, North Carolina, making them the first men to pilot a heavier-than-air machine that took off on its own power, remained under control, and sustained flight.
+
+1904: Wrights build Flyer II. The Flyer II was the second powered aircraft built by Wilbur and Orville Wright, in 1904.
+
+Jun 23 1905: First Flight with Flyer III. The Wright Flyer III was the third powered aircraft built by the Wright Brothers. Orville Wright made the first flight with it on June 23, 1905. 
+
+May 22 1906: Wright Brothers Patent Granted. During their experiments of 1902 the Wrights succeeded in controlling their glider in all three axes of flight: pitch, roll and yaw.
+
+1908: Wrights Sign Contract with a French Company and the U.S. Army. The Wright brothers made no flights at all in 1906 and 1907 while they pursued fitful negotiations with the U.S. and European governments.
+
+May 30, 1912: Wilbur Wright dies at the age of 45 after a month-long bout with typhoid fever.
+January 30, 1948: Orville Wright dies at the age of 77 due to a heart attack.
+
+"If we worked on the assumption that what is accepted as true really is true, then there would be little hope for advance."
+---Wright Brothers.
