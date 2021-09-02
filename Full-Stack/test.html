@@ -1,39 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="test3.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>修改下拉菜单右边默认的小三角及滚动条</title>
+
+    <style>
+        /*滚动条宽度*/
+        select::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        /*滚动条里面小方块*/
+        select::-webkit-scrollbar-thumb {
+            border-radius: 5px;
+            /* -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
+            background: rgba(0, 0, 0, 0.2);
+        }
+
+        /*滚动条里面轨道*/
+        select::-webkit-scrollbar-track {
+            /* -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
+            border-radius: 0;
+            background: rgba(0, 0, 0, 0.1);
+        }
+
+        /* 自定义下拉菜单样式 */
+        select {
+            width: 150px;
+            /* 右边距，留给小三角，避免被文字压盖 */
+            padding: 0 24px 0 4px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 12px;
+            line-height: 22px;
+            /* 清除下拉菜单默认样式 */
+            appearance: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            /* 设置新的小三角背景 */
+            background: url("../images/arrow_down.png") no-repeat 130px center;
+            background-size: 12px 6px;
+        }
+    </style>
+
 </head>
 
-<!-- ++++++++++++++++++++---- edit below ----+++++++++++++++++++++++++++++++ -->
-<nav>
-    <ul>
-      <li>
-        <strong>book online</strong>
-        <div>
-          <a href="">arm</a>
-          <a href="">crm</a>
-        </div>
-      </li>
-      <li>
-        <strong>about</strong>
-        <div>
-          <a href="">java</a>
-          <a href="">php</a>
-        </div>
-      </li>
-      <li>
-        <strong>contant me</strong>
-        <div>
-          <a href="">mm</a>
-          <a href="">dd</a>
-        </div>
-      </li>
-    </ul>
-  </nav>
+<body>
+    <select>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+        <option>北京</option>
+        <option>上海</option>
+        <option>广州</option>
+        <option>深圳</option>
+    </select>
+</body>
 
-<!--+++++++++++++++++++++----edit above ----+++++++++++++++++++++++++  -->
 </html>
