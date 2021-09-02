@@ -193,45 +193,4 @@ header {
     width: 100%;
   }
 
-  header {
-    display: block;
-    text-align: center;
-  }
-
-  header > div {
-    /* background-color:blue; */
-    padding: 15px;
-    font-size:1.2rem;
-  }
-
- .header-container {
-    margin:0px;
-    position: relative;
-  }
-  
-  .container {
-    padding-top:10px;
-    margin-top:20px;
-  }
-
-  .dropdown-menu {
-    display: none;
-  }
-
-  /* .pc, .pc a {
-    display: block;
-  } */
-  /* .dropdown-menu button {
-    background-color: rgb(105, 105, 105);
-    color: white;
-    font-size: 0.75rem;
-    border-width: 1px 0 0 0;
-    border-style: solid;
-    cursor: pointer;
-    width: 100%;
-  } */
-
-  .mob-nav {
-    display:none;
-  }
 }
