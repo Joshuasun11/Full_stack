@@ -147,8 +147,20 @@ header {
     width: 45%;
   }
 
+  .header-container {
+    /* background-color:red; */
+    position: relative;
+    /* margin-bottom:10px; */
+  }
+
+  .container {
+    /* background-color:red; */
+    margin-top: -100px;
+  }
+
   header>div {
     font-size:1.2rem;
+    margin-left:10px;
   }
 
   .dropdown-menu {
