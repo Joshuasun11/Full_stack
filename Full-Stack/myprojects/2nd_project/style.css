@@ -298,6 +298,8 @@ textarea {
   box-sizing: border-box;
   font-family: "Baloo Bhai 2", cursive;
   font-size: 1rem;
+  box-shadow: 5px 5px 5px rgba(110, 109, 109, 0.555);
+  border-radius: 10px;
   /* box-sizing: border-box; */
   /* margin-bottom: 10px; */
 }
@@ -317,4 +319,5 @@ textarea {
 select[name=county]{
   padding:10px;
   font-size:1rem;
+  border-radius: 10px;
 }

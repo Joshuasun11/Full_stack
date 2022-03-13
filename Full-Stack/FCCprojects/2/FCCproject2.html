@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Mdelenasusi Gaming laptop survey</title>
+    <!-- link to CSS file and Eric Meyer css reset -->
+    <meta name="description" content="Welcome to the Joshua Sun's portfolio page. I am a Front-end programmer.">
+    <link rel="stylesheet" href="css-reset.css">
+    <!-- css-reset is used for fixing all explores requirement -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;600&family=Orbitron:wght@600&family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <div class="container">
+        <header class="header">
+            <h1 id="title">Mdelenasusi Gaming Laptop Survey</h1>
+            <p id="description">Thanks for helping us to improve our laptop</p>
+        </header>
+
+        <div class="form-background">
+            <form action="mail.php" method="post" id="survey-form">
+                <div class="form-group">
+                    <label for="first name" class="form-control" id="name-label">First name</label>
+                    <input type="text" name="Name" id="name" placeholder="First Name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="Last name" class="form-control">Last name</label>
+                    <input type="text" name="Name" id="Last name" placeholder="Last Name" required>
+                </div>
+
+                <div class="form-group" id="form-control">
+                    <label for="email" class="form-control" id="email-label">Email</label>
+                    <input type="email" name="Email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age" class="form-control" id="number-label">Age (optional)</label>
+                    <input type="number" name="Age" id="number" min="5" max="100" placeholder="Enter your age">
+                </div>
+
+                <div class="form-group">
+                    <p class="form-control">What do you use Mdelenasusi for?</p>
+                    <select name="purpose" id="dropdown" class="dd-control" required>
+                        <option disabled selected value>Select a purpose</option>
+                        <option value="gaming">Gaming</option>
+                        <option value="studying">Studying</option>
+                        <option value="working">Working</option>
+                        <option value="surfing on the internet">Surfing on the internet</option>
+                        <option value="watching video">Watching movies</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p class="form-control">Would you recommand Mdelenasusi Laptop to a friend?</p>
+                    <label>
+                        <input type="radio" name="user-recommend" class="radio-selector" value="definitely" checked>
+                        Definitely Recommend
+                    </label>
+
+
+
+                    <label>
+                        <input type="radio" name="user-recommend" class="radio-selector" value="Maybe" checked>
+                        Maybe
+                    </label>
+
+                    <label>
+                        <input type="radio" name="user-recommend" class="radio-selector" value="Not Sure" checked>
+                        Not Sure
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p class="form-control">What is your most satisfied part of Mdelenasusi laptop?</p>
+                    <select name="purpose" id="dropdown" class="dd-control" required>
+                        <option disabled selected value>Select a purpose</option>
+                        <option value="hard drive capacity">hard drive capacity</option>
+                        <option value="cooling system">Cooling System</option>
+                        <option value="free pre-installed app">Free pre-installed app</option>
+                        <option value="external Design">External Design</option>
+                        <option value="over all">Over all</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <p class="form-control">What would you like to see improved?</p>
+                    <label>
+                        <input value="external design" type="checkbox" name="improve" class="input-checkbox">
+                        External design
+                    </label>
+                    <label>
+                        <input value="external design" type="checkbox" name="improve" class="input-checkbox">
+                        Keyboard design
+                    </label>
+                    <label>
+                        <input value="external design" type="checkbox" name="improve" class="input-checkbox">
+                        Cooling System
+                    </label>
+                    <label>
+                        <input value="external design" type="checkbox" name="improve" class="input-checkbox">
+                        Screen design
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <p class="form-control">Any comments or messages?</p>
+                    <textarea name="feedback-text" id="comments" cols="70" rows="10"
+                        placeholder="Type in here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+
 </body>
+
 </html>

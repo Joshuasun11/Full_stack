@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+}
+
+.container{
+    background:red;
+    
+}
+
+img {
+    width:250px
+}
+
+.image{
+    background:lime;
+}

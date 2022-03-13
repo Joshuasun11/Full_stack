@@ -1,0 +1,31 @@
+h1 {
+    text-align: center;
+    margin-top:5rem;
+    /* background:blue; */
+}
+
+.container {
+    margin:10vw;
+    /* background:lime; */
+    /* padding:10px; */
+}
+
+.box {
+    text-align: center;
+    border: 2px solid black;
+    padding: 20px 10px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.box-1 {
+    background:rgb(117, 117, 243);
+}
+
+.box-2 {
+    background:rgb(245, 119, 119);
+}
+
+.box-3 {
+    background:rgb(125, 252, 125);
+}

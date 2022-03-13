@@ -1,0 +1,283 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: rgba(255, 255, 255, 0.062);
+  margin: 0;
+  /* text-align: center; */
+  font-family: sans-serif;
+  line-height: 1.4em;
+}
+
+.doc__header {
+  padding: 2.6em;
+  text-align: center;
+  border-bottom: 1px solid;
+}
+
+h1 {
+  /* padding-top:.5em; */
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.nav__bar header {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
+  display:none;
+}
+
+header {
+  margin: 1em 0;
+  padding-top: 0.5em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+span {
+  display: flex;
+  /* background:lime; */
+  justify-content: center;
+  margin: 3em 0;
+}
+
+/* the whole content container */
+.container {
+  /* narrow the container to a reasonable size */
+  /* width: 85%; */
+  /* max-width:1024px; */
+  /* background:gray; */
+
+  /* centered the container against body */
+  margin: 0 auto;
+}
+
+.nav__bar{
+  border:2px solid;
+  /* decided the height of visible scrolling menu */
+  height:18em;
+}
+
+.nav__menu{
+  height:17.7em;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.nav__menu li{
+  border-top: 1px solid;
+}
+
+.nav__menu a {
+  display: block;
+  text-decoration: none;
+  color:black;
+  /* background: aqua; */
+  padding:1em;
+  padding-left:3em;
+}
+
+.main__doc {
+  /* width:85%; */
+  margin: 0 3.5em;
+}
+
+.main__doc h1 {
+  margin: 1.2em 0 1.2em 0;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+.gray__box {
+  border: 1px;
+  border-radius: 5px;
+  background: rgb(224, 224, 224);
+  padding: 2em;
+  position: relative;
+}
+
+.gray__box ol {
+  list-style-type: decimal;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.shadow-1:before,
+.shadow-1:after {
+  position: absolute;
+  content: "";
+  /* color:rgba(197, 197, 197, 0.418); */
+  /* top:50%; */
+  bottom: 0.8em;
+  width: 200px;
+  height: 20px;
+  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.247);
+  z-index: -1;
+}
+.shadow-1:before {
+  left: 5px;
+  /* -webkit-transform: rotate(-5deg);
+  -moz-transform: rotate(-5deg); */
+  transform: rotate(-5deg);
+}
+.shadow-1:after {
+  right: 5px;
+  /* -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg); */
+  transform: rotate(5deg);
+}
+
+.green__box {
+  border: 1px;
+  border-radius: 10px;
+  padding: 1em;
+  background: rgb(215, 255, 215);
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.green__box p {
+  margin-top: 1em;
+}
+
+footer {
+  border: 1px solid;
+  bottom: 0;
+  border-radius: 10px;
+  background: rgb(216, 216, 216);
+  padding: 1em;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: underline;
+  color: blue;
+}
+
+
+@media (min-width:800px) {
+
+  .container {
+    /* narrow the container to a reasonable size */
+    /* width: 80%; */
+    /* max-width:1024px; */
+    /* background:gray; */
+  
+    /* centered the container against body */
+    margin: 0 auto;
+  }
+
+a {
+  /*display:block make the <a> link background to be filled into the <li> area */
+  display: block;
+
+  text-decoration: none;
+  color: black;
+  /* border: 1px; */
+  padding: 1.6em;
+  padding-right: 2.1em;
+  cursor: pointer;
+  /* background:red; */
+  /* text-align: center; */
+}
+
+.doc__header {
+  padding: 2.6em;
+  text-align: center;
+  border-bottom: 1px solid;
+  margin-left: 19.4em;
+}
+
+h1 {
+  /* padding-top:.5em; */
+  font-size: 1.7em;
+  font-weight: bold;
+}
+
+.nav__bar header {
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5em;
+  display: block;
+}
+
+header {
+  margin: 1em 0;
+  padding-top: 0.5em;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+span {
+  display: flex;
+  /* background:lime; */
+  justify-content: center;
+  margin: 3em 0;
+}
+
+/* the whole content container */
+.container {
+  /* narrow the container to a reasonable size */
+  /* width: 80%; */
+  /* max-width:1024px; */
+  /* background:gray; */
+
+  /* centered the container against body */
+  margin: 0 auto;
+}
+
+.nav__bar {
+  max-width: 22em;
+  height: 100%;
+  background: rgba(204, 101, 101, 0.322);
+  position: fixed;
+  border: 1px solid;
+  top: 0;
+  font-size: 1em;
+  border-right: 2px solid;
+}
+
+.nav__bar h1 {
+  padding: 1.51em;
+}
+
+.nav__menu {
+  /* height: 100%; */
+  height: 37.5em;
+  background: rgba(157, 238, 157, 0.568);
+  /* make the fixed nav bar scrollable. */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* move the bottom menu up from the browser */
+  /* padding-bottom:1.5em; */
+  /* margin-bottom: 2em; */
+}
+
+.nav__menu li {
+  border-bottom: 1px solid;
+  position: relative;
+  padding:1em 0;
+  /* text-align: center; */
+}
+
+.main__doc {
+  /* background:red; */
+
+  position: absolute;
+  margin: 0 10% 5% 25em;
+}
+
+}

@@ -1,0 +1,484 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  margin: 0;
+  text-align: center;
+  font-family: sans-serif;
+  background: linear-gradient(white,rgb(163, 163, 255))
+}
+
+/* the whole content container */
+.container {
+  /* narrow the container to a reasonable size */
+  width: 80%;
+  /* max-width:1024px; */
+  /* background:gray; */
+
+  /* centered the container against body */
+  margin: 0 auto;
+}
+
+.header-bar {
+  background: white;
+  padding: 1em 0 0 0;
+  z-index: 999;
+}
+
+.logo {
+  /* background:red; */
+  max-width: 35vw;
+  margin: 0 auto;
+}
+/* 
+.func img {
+  width: 23em;
+  max-width: 200%;
+} */
+
+/* .menu_btn {
+  margin:0 auto;
+  margin-top:1em;
+  max-width:15em;
+} */
+
+/*
+.menu_btn img {
+  background:rgb(233, 233, 233);
+  max-width:15%;
+  border:1px solid;
+  border-radius: 15px;;
+}
+*/
+
+li > a {
+  /* display:none; */
+  /* background:red; */
+  text-decoration: none;
+  color: rgb(87, 87, 87);
+  letter-spacing: 1px;
+  /* font-size:3vw; */
+}
+
+.nav-bar {
+  /* margin:0 auto; */
+  /* background: lime; */
+  margin-top:1.2em;
+  /* max-width:10em; */
+}
+
+li {
+  margin-top: .5em;
+}
+
+.intro {
+  margin: 0 0 1em 0;
+}
+
+.intro__text {
+  /* background:green; */
+  padding: 1em 0 3em 0;
+  font-family: "Goldman", cursive;
+  font-size: clamp(2.5rem, 5vw, 5.25rem);
+  color: rgba(85, 85, 85, 0.856);
+  flex-shrink: 5;
+}
+
+/* .intro__text h1 {
+  padding-left:2em;
+  text-align: center;
+} */
+
+.intro__text h2 {
+  /* background:lime; */
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  margin-top: 1em;
+  font-size: 0.6em;
+  color: rgb(105, 105, 105);
+  letter-spacing: 1px;
+  word-spacing: 2px;
+}
+
+.intro img {
+  width: 100%;
+}
+
+.features {
+  /* background: lime; */
+  margin: 6em 0 0 0;
+  /* text-align:left; */
+  
+}
+
+.func {
+  margin-bottom: 0.1em;
+  /* background:red; */
+  /* display:flex; */
+  /* flex-direction: row; */
+  padding: 1.2em 2.5em;
+  text-align: center;
+  line-height: 1.3em;
+}
+
+
+iframe {
+  max-width: 100%;
+}
+
+.func img {
+  /* background:white; */
+  /* margin-right:2em; */
+  min-width:7%;
+  max-width:30%;
+}
+
+.func-content {
+  padding:0;
+  letter-spacing:.02em;
+}
+
+.func-content p {
+  /* background:red; */
+}
+
+.func-content h1 {
+  /* background:brown; */
+  font-size: clamp(.8rem, 3.5vw, 2rem);
+  font-weight:bold;
+  margin-bottom:.5em;
+}
+
+li > a:hover,
+li > a:focus {
+  background: rgb(157, 234, 240);
+  padding: 0 1em 0 1em;
+  border: 1px solid  rgb(157, 234, 240);
+  border-radius: 10px;
+}
+
+.cards_container {
+  /* background: red; */
+  line-height: 1.5em;
+  margin-top:7em;
+  margin-bottom:3em;
+}
+
+.cards h1{
+  background:rgba(243, 48, 48, 0.363);
+  margin:0;
+  padding:1em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 1.3em 0 .5em 0;
+}
+
+.how_it_works p {
+  /* background: red; */
+  font-size:2.5em;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+  margin-bottom: 1.5em;
+  padding-top:3em;
+}
+
+.cards {
+  border: 1px solid rgb(0, 0, 0);
+  margin-top: 1em;
+  padding:0 0 2em 0;
+}
+
+.cards+.cards{
+  margin-top:2.5em;
+}
+
+.cards p {
+  /* background:green; */
+  font-size: 1.1em;
+  margin-bottom:1em;
+  padding: 0 2em;
+}
+
+.cards a{
+  background:rgba(173, 235, 240, 0.685);
+  text-decoration: none;
+  color:black;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding:.5em 2em;
+  /* margin-bottom:5em; */
+}
+
+.subs {
+  /* background:lime; */
+  margin:5em 0;
+  padding:1em;
+  font-size:1.5em;
+  font-family: "ZCOOL QingKe HuangYou", cursive;
+}
+
+.subs p {
+  font-size: 1.3em;
+  margin-bottom:1em;
+}
+
+.subs__btn:hover {
+  background: rgba(250, 86, 86, 0.925);
+}
+
+
+.email {
+  border-radius: 5px;
+  padding: .5em 0 .5em 0;
+  width:50%;
+}
+
+.subs__btn {
+  font-family: 'Aldrich', sans-serif;
+  font-size: 1.1rem;
+  color:white;
+  background:rgb(88, 201, 216);
+  border-radius:5px;
+  padding: 0.5em;
+  margin-left: 1em;
+  min-width:20%;
+}
+
+.footer {
+  display:flex;
+  font-size:.7em;
+  background:rgb(192, 192, 192);
+  width:100%;
+  padding:2em;
+  justify-content: flex-end;
+}
+
+.footer__menu {
+  margin-bottom:1em;
+}
+
+.footer__menu a{
+  text-decoration:none;
+  font-weight: 550;
+  color:black;
+}
+
+.cards h1 {
+  font-family: 'Teko', sans-serif;
+  font-size:2em;
+}
+
+.cards h2{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 900;
+  font-size:2em;
+}
+
+.cards p {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  font-size:1.3em;
+  line-height: 1.5em;
+
+}
+
+/* ----------------media query --------------------------------*/
+
+@media (min-width: 725px) {
+  .container {
+    /* background:brown; */
+  }
+  .menu_btn img {
+    display: none;
+  }
+  ul {
+    display: flex;
+    /* background:red; */
+    justify-content: space-between;
+  }
+
+  .nav-bar {
+    /* background:lime; */
+    min-width: 20vw;
+    margin:0;
+  }
+
+  .header-bar {
+    /* fixed property is independent of parent element */
+    position: fixed;
+    top: 0;
+    /* background:rgb(146, 67, 67); */
+    display: flex;
+    /* make the contents inside the header reasonable view effect. */
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 auto;
+    padding: 1.5em;
+    /* max-width:1024px; */
+    width: 80%;
+  }
+  /* setup of nav buttons */
+  li > a {
+    /* background:red; */
+    display: flex;
+    text-decoration: none;
+    color: black;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 1em;
+    padding: 0.5em;
+    margin-top: 0;
+  }
+
+  li {
+    margin-top: 0;
+  }
+
+  .intro__text {
+    padding: 3em 0 1em 0;
+  }
+
+  .logo {
+    margin: 0;
+  }
+
+  li > a:hover,
+  li > a:focus {
+    background: rgb(157, 234, 240);
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 0.5em;
+  }
+
+  .features {
+    margin-top:5em;
+  }
+
+  .cards h1 {
+    font-family: 'Teko', sans-serif;
+    font-size:2em;
+  }
+
+  .cards h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900;
+    font-size:2em;
+  }
+
+  .cards p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size:1.3em;
+    line-height: 1.5em;
+
+  }
+
+  
+}
+
+/* ----------media query ------------------- */
+@media (min-width: 830px) {
+  .cards_container {
+    /* background:lime; */
+    display:flex;
+    justify-content: space-between;
+    padding-top:7em;
+  }
+
+  .cards {
+    width:33%;
+    margin-top: 0;
+
+    /* make the buy buttons align to same line on the cards bottom line. */
+    display:flex;
+    /* for buy buttons to move to the bottom */
+    flex-direction: column;
+    /* make the buy buttons align to same line on the cards bottom line. */
+    justify-content: space-between;
+  }
+
+  .cards+.cards{
+    margin-top:0;
+    margin-left:1em;
+  }
+  
+  .cards__btn {
+    margin-top:2em;
+    /* background:red; */
+
+
+  }
+
+  .cards h1 {
+    font-family: 'Teko', sans-serif;
+    font-size:2em;
+  }
+
+  .cards h2{
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 900;
+    font-size:2em;
+  }
+
+  .cards p {
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size:1.3em;
+    line-height: 1.5em;
+
+  }
+
+  .cards__btn a {
+    background:rgb(194, 245, 181);
+  }
+
+  .features {
+    /* background:lime; */
+    margin-top:3em;
+    padding-top:3em;
+
+  }
+
+  iframe {
+    width: 100%;
+    height:33em;
+  }
+  
+
+  .func img {
+    margin-top:2em;
+    margin-bottom:1.5em;
+  }
+
+  .func-content h1{
+    margin-bottom:1.5em;
+  }
+
+  .func-content p {
+    /* background:red; */
+    max-width:35em;
+    line-height:1.5em;
+    margin:0 auto;
+    font-size: 2em;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+  }
+  
+  .how_it_works p {
+    /* background: red; */
+    font-size:2.5em;
+    font-family: "ZCOOL QingKe HuangYou", cursive;
+    margin-bottom: 1.5em;
+    padding-top:3em;
+  }
+
+  ul {
+    list-style-type:none;
+  }
+}
+

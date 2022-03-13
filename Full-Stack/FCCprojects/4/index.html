@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning C++</title>
+    <meta name="description" content="Prodution Landing information.">
+    <!--link to CSS file and Eric Meyer css reset-->
+    <link rel="stylesheet" href="css-reset.css">
+    <!-- css-reset is used for fixing all explores requirement -->
+    <link rel="stylesheet" href="style.css">
+    <!-- link to outside style sheet -->
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="doc__header">
+            <h1>
+                Learning C++
+            </h1>
+        </div>
+        <nav class="nav__bar" id="navbar">
+            <header>
+                C++ Tutorials
+            </header>
+            <div class="nav__menu">
+                <ul>
+                    <li><a class="nav-link" href="#Chapter_introduction">Chapter introduction</a></li>
+                    <li><a class="nav-link" href="#Statements">Statements</a></li>
+                    <li><a class="nav-link" href="#Functions_and_the_main_function">Functions and the main function</a></li>
+                    <li><a class="nav-link" href="#Dissecting_Hello_world!">Dissecting Hello world!</a></li>
+                    <li><a class="nav-link" href="#Syntax_and_syntax_errors">Syntax and syntax errors</a></li>
+                    <li><a class="nav-link" href="#Quiz_Time_1">Quiz Time 1</a></li>                  
+                    <li><a class="nav-link" href="#Quiz_Time_2">Quiz Time 2</a></li>                  
+                    <li><a class="nav-link" href="#Quiz_Time_3">Quiz Time 3</a></li>              
+                    <li><a class="nav-link" href="#Quiz_Time_4">Quiz Time 4</a></li>              
+                    <li><a class="nav-link" href="#Quiz_Time_5">Quiz Time 5</a></li>                              
+                </ul>
+            </div>
+        </nav>
+        <main class="main__doc" id="main-doc">
+            <section class="main-section" id="Chapter_introduction">
+                <header>
+                    Chapter introduction
+                </header>
+                <p>
+                    Welcome to the first primary chapter of these C++ tutorials!
+                </p>
+                <p>
+                    In this chapter, we’ll take a first look at a number of topics that are essential to every C++
+                    program. Because there are quite a few topics to cover, we’ll cover most at a fairly shallow level
+                    (just enough to get by). The goal of this chapter is to help you understand how basic C++ programs
+                    are constructed. By the end of the chapter, you will be able to write your own simple programs.
+                </p>
+                <p>
+                    In future chapters, we’ll revisit the majority of these topics and explore them in more detail.
+                    We’ll also introduce new concepts that build on top of these.
+                </p>
+                <p>
+                    In order to keep the lesson lengths manageable, topics may be split over several subsequent lessons.
+                    If you feel like some important concept isn’t covered in a lesson, it’s possible that it’s covered
+                    in the next lesson.
+                </p>
+            </section>
+            <span>--------------------------------------------------</span>
+
+            <section class="main-section" id="Statements">
+                <header>Statements</header>
+                <p>A computer program is a sequence of instructions that tell the computer what to do. A statement is a
+                    type of instruction that causes the program to perform some action.</p>
+                <p>Statements are by far the most common type of instruction in a C++ program. This is because they are
+                    the smallest independent unit of computation in the C++ language. In that regard, they act much like
+                    sentences do in natural language. When we want to convey an idea to another person, we typically
+                    write or speak in sentences (not in random words or syllables). In C++, when we want to have our
+                    program do something, we typically write statements.</p>
+                <p>Most (but not all) statements in C++ end in a semicolon. If you see a line that ends in a semicolon,
+                    it’s probably a statement.</p>
+                <p>In a high-level language such as C++, a single statement may compile into many machine language
+                    instructions.</p>
+            
+                <div class="gray__box shadow-1">
+                    <header>
+                        For advanced reader
+                    </header>
+                    <p>There are many different kinds of statements in C++:</p>
+                    <ol>
+                        <li>Declaration statements</li>
+                        <li>Jump Statements</li>
+                        <li>Expression statements</li>
+                        <li>Compound statements</li>
+                        <li>Selection statements</li>
+                        <li>Iteration statements</li>
+                        <li>Try locks</li>
+                    </ol>
+                    <p>By the time you’re through with this tutorial series, you’ll understand what all of these are!
+                    </p>
+                </div>
+            </section>
+            <span>--------------------------------------------------</span>
+            
+            <section  class="main-section" id="Functions_and_the_main_function">
+                <header>Functions and the main function</header>
+                <p>In C++, statements are typically grouped into units called functions. A function is a collection
+                    of statements that executes sequentially (in order, from top to bottom). As you learn to write
+                    your own programs, you’ll be able to create your own functions and mix and match statements in
+                    any way you please (we’ll show how in a future lesson).</p>
+                <div class="green__box shadow-1">
+                    <header>
+                        Rules
+                    </header>
+                    <p>Every C++ program must have a special function named main (all lower case letters). When the
+                        program is run, the statements inside of main are executed in sequential order.</p>
+            
+                </div>
+            
+                <p>
+                    Programs typically terminate (finish running) when the last statement inside function main has
+                    executed (though programs may abort early in some circumstances, or do some cleanup afterwards).
+                </p>
+                <p>Functions are typically written to do a specific job. For example, a function named “max” might
+                    contain statements that figures out which of two numbers is larger. A function named
+                    “calculateGrade” might calculate a student’s grade from a set of test scores. We will talk a lot
+                    more about functions soon, as they are the most commonly used organizing tool in a program.</p>
+            
+                <div class="gray__box shadow-1">
+                    <header>
+                        Author's note
+                    </header>
+                    <p>When discussing functions, it’s fairly common shorthand to append a pair of parenthesis to
+                        the end of the function’s name. For example, if you see the term <i>main()</i> or
+                        <i>doSomething()</i>, this is shorthand for functions named <i>main</i> or
+                        <i>doSomething</i> respectively. This helps differentiate functions from other kinds of
+                        objects (such as variables) without having to write the word “function” each time.
+                    </p>
+                </div>
+            </section>
+            <span>--------------------------------------------------</span>
+            
+            <section class="main-section" id="Dissecting_Hello_world!">
+                <header>Dissecting Hello world!</header>
+                <p>Now that you have a brief understanding of what statements and functions are, let’s return to
+                    our “Hello world” program and take a high-level look at what each line does in more detail.
+                </p>
+                <pre>
+                    <code>
+                        #include &ltiostream&gt
+                        int main() {
+                            std::cout<<"Hello world";
+                            return 0;
+                        }
+                    </code>
+                </pre>
+                        <p>
+                            Line 1 is a special type of line called a preprocessor directive. This preprocessor directive indicates that we would like to use the contents of the iostream library, which is the part of the C++ standard library that allows us to read and write text from/to the console. We need this line in order to use std::cout on line 5. Excluding this line would result in a compile error on line 5, as the compiler wouldn’t otherwise know what std::cout is.
+                        </p>
+                </section>
+                <span>--------------------------------------------------</span>
+            
+                <section class="main-section" id="Syntax_and_syntax_errors">
+                    <header>
+                        Syntax and syntax errors
+                    </header>
+                    <p>
+                        In English, sentences are constructed according to specific grammatical rules that you probably learned in English class in school. For example, normal sentences end in a period. The rules that govern how sentences are constructed in a language is called syntax. If you forget the period and run two sentences together, this is a violation of the English language syntax.
+                    </p>
+                    <p>
+                        C++ has a syntax too: rules about how your programs must be constructed in order to be considered valid. When you compile your program, the compiler is responsible for making sure your program follows the basic syntax of the C++ language. If you violate a rule, the compiler will complain when you try to compile your program, and issue you a syntax error.
+                    </p>
+                </section>
+                <span>--------------------------------------------------</span>
+            
+                <section  class="main-section" id="Quiz_Time_1">
+                    <header>
+                        Quiz Time 1
+                    </header>
+                    <code>
+            
+                    </code>
+                    <code>
+            
+                    </code>
+                    <code>
+            
+                    </code>
+                    <code>
+            
+                    </code>
+                </section>
+            
+                <span>--------------------------------------------------</span>
+            
+                <section  class="main-section" id="Quiz_Time_2">
+                    <header>
+                        Quiz Time 2
+                    </header>
+                </section>
+            
+                <span>--------------------------------------------------</span>
+            
+                <section  class="main-section" id="Quiz_Time_3">
+                    <header>
+                        Quiz Time 3
+                    </header>
+                </section>
+            
+                <span>--------------------------------------------------</span>
+            
+                <section  class="main-section" id="Quiz_Time_4">
+                    <header>
+                        Quiz Time 4
+                    </header>
+                </section>
+            
+                <span>--------------------------------------------------</span>
+            
+                <section  class="main-section" id="Quiz_Time_5">
+                    <header>
+                        Quiz Time 5
+                    </header>
+                </section>
+            
+                <span>--------------------------------------------------</span>
+            
+                <footer>
+                    <header>
+                        Reference
+                    </header>
+                    <p>
+                        All the documentation in this page is taken from <a href="https://www.learncpp.com/cpp-tutorial/statements-and-the-structure-of-a-program/" target="blank">LEARN C++</a>
+                    </p>
+                </footer>
+                
+            </main>
+            </div>
+
+</body>
+
+</html>

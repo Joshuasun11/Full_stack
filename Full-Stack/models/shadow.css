@@ -1,0 +1,28 @@
+/* This is a shadow model. */
+/* set or add class in html element with shadow-1 */
+/* set html element position:relative */
+
+.shadow-1:before, .shadow-1:after {
+    position: absolute;
+    content:"";
+    /* color:rgba(197, 197, 197, 0.418); */
+    /* top:50%; */
+    bottom:.8em;
+    width: 200px;
+    height: 20px;
+    box-shadow: 0 15px 10px rgba(0, 0, 0, 0.247);
+    z-index: -1;
+  }
+  .shadow-1:before {
+    left: 5px;
+    /* -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg); */
+    transform: rotate(-5deg);
+  }
+  .shadow-1:after {
+    right: 5px;
+    /* -webkit-transform: rotate(5deg);
+    -moz-transform: rotate(5deg); */
+    transform: rotate(5deg);
+  }
+  

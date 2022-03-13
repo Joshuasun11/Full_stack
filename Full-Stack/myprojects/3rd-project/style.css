@@ -2,6 +2,10 @@ body {
   font-family: "Titillium Web", sans-serif;
   color: white;
   /* background-color:purple; */
+  background-image: url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment:fixed;
 }
 
 a {
@@ -189,11 +193,11 @@ header {
   }
 
   .mob-nav-button {
+    margin-left:-50px;
     text-align:center;
     display:block;
     padding:10px 15px;
     background-color:rgb(215, 243, 93);
-    margin-left:-50px;
   }
 
 

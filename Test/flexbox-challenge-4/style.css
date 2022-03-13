@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+    width:80%;
+    margin: 0 auto;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.3em;
+    
+}
+
+h1, h2
+ {
+    margin:0;
+}
+
+img {
+    max-width: 100%;
+  }
+
+section {
+    display:flex;
+}
+
+.header {
+    background:#F3EED9;
+    padding:6.5em 1em;
+}
+
+.header__text {
+    /* background:green; */
+    margin: 0 auto;
+    /* border:1px solid black; */
+
+}
+
+.header__text p{
+    /* background:red; */
+    font-size: .7em;
+    text-align:center;
+    margin-bottom: 0.7em;
+    margin-top:0;
+    letter-spacing: 2px;
+}
+
+.header__text h2 {
+    width:60%;
+    margin:0 auto;
+    text-align:center;
+    /* background:lime; */
+}
+
+/* --------section 1 main body head-------- */
+
+.main__head {
+    background:white;
+    flex-direction: column;
+    text-align: center;
+    /* border:1px solid black; */
+    padding:2em 0;
+    margin:2.5em 0;
+}
+
+.main__head_text {
+    
+    display:flex;
+    justify-content: space-between;
+    padding: 0 2em;
+    /* background:lime; */
+    text-align:left;
+}
+
+.main__head_text p{
+    /* border:1px solid black; */
+    /* background:red; */
+
+    /* in order to create space between two Ps, can't set to 50%, which total is 100%  */
+    width:50%;
+}
+
+p+p{
+    margin-left:5em;
+}
+
+
+/* ---section 2 main__body ------------- */
+
+.main__body {
+    background:#222C2A;
+    color:white;
+    padding:3em 4em;
+}
+
+.main__body_container{
+    display:flex;
+    justify-content:space-between;
+}
+
+.main__body_text {
+    width:50%;
+    /* background:lime; */
+    /* margin-left:5em; */
+}
+
+.col + .col {
+    margin-left:5em;
+}
+
+.image {
+    width:45%;
+}
+
+.col2 {
+    text-align:left;
+    margin-left:5em;
+}
+
+/* -----section 3 foot---------------- */
+
+.main__foot {
+    background:#824936;
+    color:white;
+    padding:3em 4em;
+}
+
+/* .main__body_text2 {
+    width:50%;
+    background:#222C2A;
+    margin-left:6em;
+} */
+
+/* -----media query ----------------- */
+@media (max-width:800px) {
+
+    
+}
