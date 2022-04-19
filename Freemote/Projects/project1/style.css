@@ -1,0 +1,197 @@
+@font-face {
+    font-family: 'AdiHaus';
+    src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AdiHaus";
+    src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 1em;
+    max-width: 500px;
+    margin: 0 auto;
+    /* background:gray; */
+}
+
+.header-container {
+    max-width: 100vw;
+    max-height: 100vh;
+    /* background:red; */
+}
+
+.header-container img {
+    /* display:block; */
+    max-width: 15%;
+    margin-top: .6em;
+    padding-bottom: 0.5em;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+header p {
+    font-size: .8em;
+    font-family: AdiHaus;
+    /* background:green; */
+    margin: 1em 2.5em;
+    line-height: 2.5em;
+    font-weight: lighter;
+}
+
+header h1 {
+    letter-spacing: .15em;
+    font-family: AdiHaus;
+    font-weight: 500;
+}
+
+h1:nth-child(1) {
+    color: red;
+    margin: .3em 0;
+    font-weight: 200;
+}
+
+.submit-container {
+    display: flex;
+    /* background: red; */
+    justify-content: center;
+    margin: 1.5em auto;
+    /* display: inline-block; */
+}
+
+.submit-container input {
+    min-height: 2.5em;
+    width: 20em;
+    margin-left: 0.5em;
+    padding: 0.5em;
+    /* border: none; */
+    border: 1px solid black;
+    border-radius: 2.4px;
+}
+
+button {
+    /* position: absolute; */
+    height: 3em;
+    width: 4.5em;
+    color: white;
+    font-weight: bold;
+    background: black;
+    border: 1px solid black;
+    border-radius: 2.4px;
+    margin-right: 0.5em;
+}
+
+.main-image-mobile {
+    display: none;
+}
+
+/* -----------------------media query --------------------*/
+
+@media only screen and (min-width:768px) {
+
+    body {
+        background: url("https://assets.codepen.io/6060109/waves.png");
+        background-size: cover;
+    }
+
+    .main-image {
+        display: none;
+    }
+
+    .container {
+        text-align: left;
+        width: 50%;
+        /* background:gray; */
+    }
+
+    .container-desktop {
+        display: flex;
+    }
+
+    .header-container img {
+        /* display:block; */
+        max-width: 15%;
+        margin-top: 3em;
+        margin-left: 1.2em;
+        margin-bottom: 3.5em;
+        /* padding-bottom: 0.5em; */
+    }
+
+    header {
+        margin-top: 3em;
+    }
+
+    header h1 {
+        letter-spacing: 0.09em;
+        margin-left: .4em;
+        font-weight: 700;
+        font-size: 3.3em;
+    }
+
+    header h1:nth-child(1) {
+        color: red;
+        margin-left: .4em;
+        margin-bottom: 0;
+    }
+
+    header p {
+        font-size: .8em;
+        font-family: AdiHaus;
+        /* background:green; */
+        margin: 2.5em 4em 2.5em 2em;
+        line-height: 1.5em;
+        font-weight: lighter;
+        /* background:green; */
+    }
+
+    .submit-container {
+        justify-content: left;
+        margin-left: 0.7em;
+        /* background-color: #666; */
+    }
+
+    .submit-container input {
+        min-height: 3.5em;
+        width: 24em;
+        margin-left: 0.5em;
+        padding: 0.5em;
+        /* border: none; */
+        border: 1px solid black;
+        border-radius: 2.4px;
+    }
+
+    button {
+        /* position: absolute; */
+        height: 3.5em;
+        width: 5.5em;
+        color: white;
+        font-weight: bold;
+        background: black;
+        border: 1px solid black;
+        border-radius: 2.4px;
+        margin-right: 0.5em;
+    }
+
+
+    .main-image-mobile {
+        display: block;
+        /* width: 50%; */
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 35% 100%);
+        background-size: cover;
+    }
+}

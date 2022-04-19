@@ -293,9 +293,9 @@ h2 {
   .container {
     /* background:brown; */
   }
-  .menu_btn img {
+  /* .menu_btn img {
     display: none;
-  }
+  } */
   ul {
     display: flex;
     /* background:red; */
