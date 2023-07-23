@@ -22,6 +22,12 @@ body{
 .header p{
     padding-top:20px;
     font-size:1.2rem;
+    /* background:black; */
+    color:rgb(27, 125, 150);
+}
+
+#title{
+    color:rgb(46, 157, 222);
 }
 
 .form-background{
