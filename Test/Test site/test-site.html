@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tested website</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="internalpage" href="test2.html">
 </head>
 
 <body>
@@ -15,9 +16,12 @@
             you are beautiful
         </h1>
         <p>
-            this is a line <sub>this is sub</sub>and <sup>this is a sup</sup> and <ins>this is a inserted text</ins> and <mark>this is a marked text </mark> and <em>this is a emphasis text </em> and <i>this is a Italic text</i>this is a <abbr title="What the heck"> WTH </abbr> text.
+            this is a line <sub>this is sub</sub>and <sup>this is a sup</sup> and <ins>this is a inserted text</ins> and
+            <mark>this is a marked text </mark> and <em>this is a emphasis text </em> and <i>this is a Italic
+                text</i>this is a <abbr title="What the heck"> WTH </abbr> text.
         </p>
-        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="correct img"> 
+        <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+            alt="correct img">
         <br>
         <br>
         <a href="#tips">点击这里到提示</a>
@@ -32,10 +36,16 @@
             </button>
             <br>
             <br>
-            
+
         </a>
         <a name="tips">这是个提示</a>
 
+        <p>
+
+            <iframe src="test2.html" name="iframe_a" height="300px" width="100%" title="Iframe Example"></iframe>
+
+<p><a href="index.html" target="iframe_a">google.com</a></p>
+        </p>
 
     </div>
 </body>
@@ -44,6 +54,7 @@
     mark {
         background-color: pink;
     }
+
     h1 {
         background-color: yellow;
         margin: 0;
@@ -58,10 +69,12 @@
         font-size: 1rem;
         /* margin: 0 auto;*/
     }
-    img{
+
+    img {
         height: 100px;
         width: 100px;
     }
+
     abbr {
         text-decoration: none !important;
     }
